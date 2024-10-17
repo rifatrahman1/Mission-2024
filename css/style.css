@@ -14,3 +14,67 @@ body {
     max-width: 1128px;
     margin: 0 auto;
 }
+
+/* hero seciton start */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-title{
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 80px;
+    color: rgb(51, 51, 51);
+    font-family: "Yeseva One", serif;
+}
+.hero-title {
+    position: relative;
+    padding-left: 19px; /* Adds space between the text and the border */
+  }
+.hero-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    top: 18px;
+    height: 124px;
+    width: 4px; /* Width of the left border */
+    background-color: rgb(255, 89, 89); /* Border color */
+  }
+.hero-description h1 > span{
+    color: rgb(255, 173, 90);
+}
+.hero-description p{
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 15px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(62, 62, 62);
+}
+.hero-description button{
+    padding: 12px 25px;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: #ffffff;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(255, 89, 89);
+}
+.hero-description .scroll{
+    font-size: 16px;
+    margin-top: 33px;
+    color: rgb(67, 67, 67);
+}
+.hero-images img{
+    width: 426px;
+    height: 623px;
+}
+/* hero seciton end */
+
+
+/* responsive mobile device start */
+@media screen and (max-width: 576px) {
+        
+}
+/* responsive mobile device end */
