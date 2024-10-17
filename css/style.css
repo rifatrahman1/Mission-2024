@@ -5,8 +5,8 @@
 }
 
 body {
-    /* font-family: "Poppins", sans-serif;
-    font-family: "Yeseva One", serif;
+    font-family: "Poppins", sans-serif;
+    /* font-family: "Yeseva One", serif;
     font-family: "Manrope", sans-serif; */
 }
 
@@ -58,6 +58,7 @@ body {
     margin-top: 20px;
     color: #ffffff;
     border: none;
+    font-size: 16px;
     font-family: "Poppins", sans-serif;
     background-color: rgb(255, 89, 89);
 }
@@ -72,9 +73,140 @@ body {
 }
 /* hero seciton end */
 
+/* my mission 2024 */
 
+.my-mission{
+    margin-top: 92px;
+}
+.my-mission-title{
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: rgb(19, 16, 58);
+}
+.my-mission-title span{
+    color: rgb(255, 173, 90);
+}
+.card{
+    display: flex;
+    gap: 26px;
+    margin-top: 50px;
+}
+.mission{
+    width: 360px;
+    border-radius: 26px;
+    padding: 37px 24px;
+    background-color: rgba(79, 157, 166, 0.1);
+}
+.mission img{
+    width: 141px;
+    height: 141px;
+    border: 2px dashed rgb(175, 174, 174);
+}
+.mission h4{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 17px;
+    font-family: "Poppins", sans-serif;
+}
+.mission p{
+    line-height: 24px;
+    margin-top: 16px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(66, 66, 66);
+}
+.vission{
+    width: 360px;
+    border-radius: 26px;
+    padding: 37px 24px;
+    background-color: rgba(255, 89, 89, 0.1);
+}
+.vission img{
+    width: 141px;
+    height: 141px;
+    border: 2px dashed rgb(175, 174, 174);
+}
+.vission h4{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 17px;
+    font-family: "Poppins", sans-serif;
+}
+.vission p{
+    line-height: 24px;
+    margin-top: 16px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(66, 66, 66);
+}
+.goals{
+    width: 360px;
+    border-radius: 26px;
+    padding: 37px 24px;
+    background-color:rgb(255, 244, 214);
+}
+.goals img{
+    width: 141px;
+    height: 141px;
+    border: 2px dashed rgb(175, 174, 174);
+}
+.goals h4{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 17px;
+    font-family: "Poppins", sans-serif;
+}
+.goals p{
+    line-height: 24px;
+    margin-top: 16px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(66, 66, 66);
+}
+
+/* develop section start */
+
+.develop{
+    display: flex;
+    margin-top: 90px;
+    align-items: center;
+    gap: 75px;
+}
+.develop-images img{
+    width: 400px;
+    height: 400px;
+}
+.develop-description h3{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    color: rgb(51, 51, 51);
+}
+.develop-description p{
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 17px;
+    color: rgb(62, 62, 62);
+}
+.develop-description button{
+    padding: 14px 31px;
+    color: #ffffff;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    margin-top: 32px;
+    background-color: rgb(255, 89, 89);
+}
 /* responsive mobile device start */
-@media screen and (max-width: 576px) {
-        
+@media screen and (max-width: 576px) {   
+    .card, .hero{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .card{
+        padding: 20px;
+    }
+    .mission, .vission, .goals{
+        width: 100%;
+    }
 }
 /* responsive mobile device end */
