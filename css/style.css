@@ -10,28 +10,32 @@ body {
     font-family: "Manrope", sans-serif; */
 }
 
-.container{
+.container {
     max-width: 1128px;
     margin: 0 auto;
 }
 
 /* hero seciton start */
-.hero{
+.hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.hero-title{
+
+.hero-title {
     font-size: 60px;
     font-weight: 400;
     line-height: 80px;
     color: rgb(51, 51, 51);
     font-family: "Yeseva One", serif;
 }
+
 .hero-title {
     position: relative;
-    padding-left: 19px; /* Adds space between the text and the border */
-  }
+    padding-left: 19px;
+    /* Adds space between the text and the border */
+}
+
 .hero-title::before {
     content: "";
     position: absolute;
@@ -39,20 +43,25 @@ body {
     top: 0;
     top: 18px;
     height: 124px;
-    width: 4px; /* Width of the left border */
-    background-color: rgb(255, 89, 89); /* Border color */
-  }
-.hero-description h1 > span{
+    width: 4px;
+    /* Width of the left border */
+    background-color: rgb(255, 89, 89);
+    /* Border color */
+}
+
+.hero-description h1>span {
     color: rgb(255, 173, 90);
 }
-.hero-description p{
+
+.hero-description p {
     font-size: 18px;
     line-height: 28px;
     margin-top: 15px;
     font-family: "Poppins", sans-serif;
     color: rgb(62, 62, 62);
 }
-.hero-description button{
+
+.hero-description button {
     padding: 12px 25px;
     border-radius: 8px;
     margin-top: 20px;
@@ -62,101 +71,119 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: rgb(255, 89, 89);
 }
-.hero-description .scroll{
+
+.hero-description .scroll {
     font-size: 16px;
     margin-top: 33px;
     color: rgb(67, 67, 67);
 }
-.hero-images img{
+
+.hero-images img {
     width: 426px;
     height: 623px;
 }
+
 /* hero seciton end */
 
 /* my mission 2024 */
 
-.my-mission{
+.my-mission {
     margin-top: 92px;
 }
-.my-mission-title{
+
+.my-mission-title {
     font-size: 48px;
     font-weight: 700;
     text-align: center;
     font-family: "Poppins", sans-serif;
     color: rgb(19, 16, 58);
 }
-.my-mission-title span{
+
+.my-mission-title span {
     color: rgb(255, 173, 90);
 }
-.card{
+
+.card {
     display: flex;
     gap: 26px;
     margin-top: 50px;
 }
-.mission{
+
+.mission {
     width: 360px;
     border-radius: 26px;
     padding: 37px 24px;
     background-color: rgba(79, 157, 166, 0.1);
 }
-.mission img{
+
+.mission img {
     width: 141px;
     height: 141px;
     border: 2px dashed rgb(175, 174, 174);
 }
-.mission h4{
+
+.mission h4 {
     font-size: 24px;
     font-weight: 600;
     margin-top: 17px;
     font-family: "Poppins", sans-serif;
 }
-.mission p{
+
+.mission p {
     line-height: 24px;
     margin-top: 16px;
     font-family: "Poppins", sans-serif;
     color: rgb(66, 66, 66);
 }
-.vission{
+
+.vission {
     width: 360px;
     border-radius: 26px;
     padding: 37px 24px;
     background-color: rgba(255, 89, 89, 0.1);
 }
-.vission img{
+
+.vission img {
     width: 141px;
     height: 141px;
     border: 2px dashed rgb(175, 174, 174);
 }
-.vission h4{
+
+.vission h4 {
     font-size: 24px;
     font-weight: 600;
     margin-top: 17px;
     font-family: "Poppins", sans-serif;
 }
-.vission p{
+
+.vission p {
     line-height: 24px;
     margin-top: 16px;
     font-family: "Poppins", sans-serif;
     color: rgb(66, 66, 66);
 }
-.goals{
+
+.goals {
     width: 360px;
     border-radius: 26px;
     padding: 37px 24px;
-    background-color:rgb(255, 244, 214);
+    background-color: rgb(255, 244, 214);
 }
-.goals img{
+
+.goals img {
     width: 141px;
     height: 141px;
     border: 2px dashed rgb(175, 174, 174);
 }
-.goals h4{
+
+.goals h4 {
     font-size: 24px;
     font-weight: 600;
     margin-top: 17px;
     font-family: "Poppins", sans-serif;
 }
-.goals p{
+
+.goals p {
     line-height: 24px;
     margin-top: 16px;
     font-family: "Poppins", sans-serif;
@@ -165,29 +192,54 @@ body {
 
 /* develop section start */
 
-.develop{
+.develop {
+    position: relative;
     display: flex;
     margin-top: 90px;
     align-items: center;
+    padding-bottom: 100px;
     gap: 75px;
 }
-.develop-images img{
+
+.develop-images {
+    position: relative;
+    /* padding-left: 19px; */
+}
+
+.develop-images::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    left: -100px;
+    top: 54px;
+    z-index: -10;
+    border: 39px solid rgb(255, 173, 90);
+    /* Border color */
+}
+
+.develop-images img {
     width: 400px;
     height: 400px;
+    z-index: 1;
 }
-.develop-description h3{
+
+.develop-description h3 {
     font-size: 36px;
     font-weight: 700;
     line-height: 54px;
     color: rgb(51, 51, 51);
 }
-.develop-description p{
+
+.develop-description p {
     font-size: 18px;
     line-height: 30px;
     margin-top: 17px;
     color: rgb(62, 62, 62);
 }
-.develop-description button{
+
+.develop-description button {
     padding: 14px 31px;
     color: #ffffff;
     border-radius: 8px;
@@ -196,17 +248,80 @@ body {
     margin-top: 32px;
     background-color: rgb(255, 89, 89);
 }
+
+
+
+/* global community section start */
+
+.global{
+    display: flex;
+    gap: 106px;
+    margin-top: 150px;
+}
+.global-description h1{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    color: rgb(51, 51, 51);
+}
+.global-description p{
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 18px;
+    color: rgb(62, 62, 62);
+}
+.global-description button{
+    padding: 14px 31px;
+    color: #ffffff;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    margin-top: 32px;
+    background-color: rgb(255, 89, 89);
+}
+.global-images img{
+    height: 400px;
+    width: 400px;
+}
+
+.global-images {
+    position: relative;
+    /* padding-left: 19px; */
+}
+
+.global-images::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    bottom: -80px;
+    right: -100px;
+    z-index: -10;
+    border: 39px solid rgb(255, 173, 90);
+    /* Border color */
+}
 /* responsive mobile device start */
-@media screen and (max-width: 576px) {   
-    .card, .hero{
+@media screen and (max-width: 576px) {
+
+    .card,
+    .hero, .develop, .global {
         padding: 10px;
         flex-direction: column;
     }
-    .card{
+
+    .card {
         padding: 20px;
     }
-    .mission, .vission, .goals{
+
+    .mission,
+    .vission,
+    .goals {
         width: 100%;
     }
+    .global-images::before{
+        right: 10px;
+    }
 }
+
 /* responsive mobile device end */
