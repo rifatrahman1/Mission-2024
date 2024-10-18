@@ -301,11 +301,129 @@ body {
     border: 39px solid rgb(255, 173, 90);
     /* Border color */
 }
+
+/* build corona application section */
+
+.build-corona{
+    margin-top: 150px;
+}
+.build-title{
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+.build-title span{
+    color: rgb(255, 173, 90);
+}
+.corona-application{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 140px;
+}
+.build-images img{
+    height: 459px;
+    width: 229px;
+    margin-left: 130px;
+}
+.build-description{
+    margin-left: 163px;
+}
+.build-description h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+.build-description span{
+    color: rgb(255, 173, 90);
+}
+.build-description p{
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 18px;
+    color: rgb(62, 62, 62);
+}
+.build-description button{
+    padding: 14px 31px;
+    color: #ffffff;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    margin-top: 32px;
+    background-color: rgb(255, 89, 89);
+}
+
+.build-images {
+    position: relative;
+    /* padding-left: 19px; */
+}
+
+.build-images::before {
+    content: "";
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    left: 85px;
+    top: -40px;
+    border-radius: 26px;
+    z-index: -10;
+    background-color: rgb(255, 173, 90);
+    /* Border color */
+}
+
+.square::before {
+    content: "";
+    position: absolute;
+    width: 77px;
+    height: 77px;
+    bottom: 12px;
+    left: 115px;
+    border-radius: 26px;
+    z-index: -10;
+    background-color: rgb(255, 173, 90);
+    /* Border color */
+}
+.square1::before {
+    content: "";
+    position: absolute;
+    width: 77px;
+    height: 77px;
+    bottom: 110px;
+    right: -10px;
+    border-radius: 26px;
+    z-index: -10;
+    background-color: rgb(255, 173, 90);
+    /* Border color */
+}
+
+/* footer section start */
+
+footer{
+    margin-top: 122px;
+    background-color: rgb(11, 13, 23);
+}
+.footer-description{
+    padding: 42px;
+    text-align: center;
+}
+.footer-description h1{
+    font-size: 36px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-family: "Lobster", sans-serif;
+}
+.footer-description h1 > span{
+    color: rgb(255, 89, 89);
+}
+.footer-description p{
+    margin-top: 25px;
+    color: rgb(217, 219, 225);
+    font-family: "Manrope", sans-serif;
+}
 /* responsive mobile device start */
 @media screen and (max-width: 576px) {
 
     .card,
-    .hero, .develop, .global {
+    .hero, .develop, .global, .corona-application{
         padding: 10px;
         flex-direction: column;
     }
@@ -321,6 +439,13 @@ body {
     }
     .global-images::before{
         right: 10px;
+    }
+    .build-description{
+        padding: 30px;
+        margin: 70px 0;
+    }
+    .square1::before{
+        right: 150px;
     }
 }
 
